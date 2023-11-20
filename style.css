@@ -1,30 +1,67 @@
-*{
-    text-decoration: none;
-}
-
 .logo{
     width: 150px;
-    height: 90px;
 }
 
-/* .navbar{
-    background-color: #6a86c6;
+#logo{
+    width: 150px;
 }
 
-#offcanvasDarkNavbar{
-    background-color: #6a86c6;
-}
- */
-.comicbtn{
-    border: none;
-    background-color: #ffffff00;
+#navbarNav{
+    font-size: 1.2rem;
 }
 
 #uno{
-    border-top: none;
-    border-bottom: 1px solid rgb(177, 177, 177);
+    background-color: #83a2ec;
 }
 
-#intro{
-    background-color: #506595;
+#header{
+    background-color: #6a86c6;
+}
+
+#bn{
+    font-size: 1.5rem;
+}
+
+.Comic{
+    background-color: #6a86c6;
+}
+
+#icono{
+    width: 90px;
+}
+
+#footer{
+    background-color: #6a86c6;
+}
+
+#btn{
+    width: 150px;
+}
+
+#btn:hover{
+    background-color: #6a86c6;
+}
+
+#dsc{
+    font-size: 1.5rem;
+}
+
+#cmcc{
+    font-size: 1.5rem;
+}
+
+#prs{
+    width: 150px;
+}
+
+#prs:hover{
+    background-color: #83a2ec;
+}
+
+.card-img-top{
+    width: 300px;
+}
+
+#equipo{
+    font-size: 1.2rem;
 }

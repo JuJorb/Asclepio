@@ -3,58 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Asclepio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <div class="primero">
-    <nav class="navbar">
-        <div class="container py-2" id="uno">
-            <img class="logo" src="./img/Logo.png" alt="">
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nosotros</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Comic
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Personajes</a></li>
-                    <li><a class="dropdown-item" href="#">Escenarios</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      <!-- fin navbar -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                    <p>Bienvenid@ a Asclepio</p>
-            <p class="dos"> Presiona para ver nuestro Comic!!!</p>
-            <button class="comicbtn"><a href="#Comic"> Comic</a></button>
+    <header id="header" class="header navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/Logo.png" alt="" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Comic">Comic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Equipo de Trabajo</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-    </div>
+    </header>
 
-    <script src="./app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <section id="uno" class="introduccion  text-white text-center py-3">
+        <div id="bn" class="container">
+            <p class="display-2 fs-2">Bienvenid@ a Asclepio</p>
+            <p class="dos">Presiona para ver nuestro Comic!!!</p>
+            <img src="./img/comicc.png" href="#Comic" id="btn" class="btn" alt="">
+            <!-- <a href="#Comic" class="btn btn-primary comicbtn">Comic</a> -->
+        </div>
+    </section>
+
+    <section class="descripcion text-center py-2">
+        <div class="container">
+            <div class="row">
+                <div id="dsc" class="col-md-6">
+                    <h1>Descripción del proyecto</h1>
+                    <p>Asclepio es un proyecto que se fundamenta en un cómic interactivo diseñado para brindar a las personas interesadas en el tema una forma más sencilla y entretenida de adquirir información.</p>
+                    <h1>Objetivo</h1>
+                    <p>El objetivo del proyecto Asclepio es dar información a los jóvenes de cómo tratar a las personas con esta discapacidad auditiva.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./img/ilust.1.png" alt="" class="img-fluid ilustracionUno">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Comic text-center text-white py-4" id="Comic">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./img/comic.png" alt="" class="img-fluid comicDos">
+                    <img src="./img/personajes.png" href="index2.html" id="prs" class="btn galeria mt-4"></img>
+                </div>
+                <div id="cmcc" class="col-md-6">
+                    <h1>Sinopsis</h1>
+                    <p>El cómic interactivo (ASCLEPIO) cuenta la historia de una joven y hermosa chica que nace con discapacidad auditiva, aún así sus padres deciden que debe de tener una buena educación como los demás niños, Mariana deberá enfrentar muchas cosas y también aprender para poder cumplir sus sueños.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipo" id="equipo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="">
+                        <img src="./img/alexa.png" alt="" class="card-img-top">
+                        <div class="body">
+                            <h5 class="title">Alexa Londoño</h5>
+                            <p class="text">Nombre: Alexa Londoño<br>Edad: 17 años<br>Descripción: Amable, Responsable, Respetuosa y Paciente<br>Cargo: Illustradora</p>
+                            <a href="" class="btn btn-primary" onclick="InfUno()">Ver Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="">
+                        <img src="./img/samuel.png" alt="" class="card-img-top">
+                        <div class="body">
+                            <h5 class="title">Samuel Patiño</h5>
+                            <p class="text">Nombre: Samuel Patiño<br>Edad: 17 años<br>Descripción: Atento, Responsable, Respetuoso y Tranquilo<br>Cargo: Desarrollador</p>
+                            <a href="" class="btn btn-primary" onclick="InfDos()">Ver Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="">
+                        <img src="./img/Juan.png" alt="" class="card-img-top">
+                        <div class="body">
+                            <h5 class="title">Juan José Rodriguez</h5>
+                            <p class="text">Nombre: Juan José Rodriguez<br>Edad: 17 años<br>Descripción: Sociable<br>Cargo: Investigador</p>
+                            <a href="" class="btn btn-primary" onclick="InfTres()">Ver Más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="footer text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+            <img src="./img/Logo.png" alt="" id="logo" class="img-fluid lg">
+            </div>
+            <div class="col-6"></div>
+            <div class="col-3">
+                <img src="./img/ins.png" alt="" id="icono" class="rd">
+                <img src="./img/ws.png" alt="" id="icono" class="rd">
+                <img src="./img/gm.png" alt="" id="icono" class="rd">
+            </div>
+            </div>
+        </div>
+    </section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
 </html>
