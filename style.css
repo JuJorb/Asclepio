@@ -1,0 +1,30 @@
+*{
+    text-decoration: none;
+}
+
+.logo{
+    width: 150px;
+    height: 90px;
+}
+
+/* .navbar{
+    background-color: #6a86c6;
+}
+
+#offcanvasDarkNavbar{
+    background-color: #6a86c6;
+}
+ */
+.comicbtn{
+    border: none;
+    background-color: #ffffff00;
+}
+
+#uno{
+    border-top: none;
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+#intro{
+    background-color: #506595;
+}
